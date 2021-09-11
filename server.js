@@ -5,6 +5,6 @@ const port = 3001
 app.get('/', (req, res) => {
     res.send("hello wrold")
 })
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`port in running ${port}`)
 });
